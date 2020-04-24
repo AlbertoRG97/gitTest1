@@ -43,8 +43,25 @@ public class computer {
 	public void setRom(int rom) {
 		this.rom = rom;
 	}
+	public String getPeriferico(String p) {
+		String x = "";
+		for (int i = 0; i < perifericos.length; i++) {
+			x = perifericos[i];
+			if(x.equals(p)) {
+				x = p;
+				break;
+			}
+			else {
+				continue;
+			}
+		}
+		return x;
+	}
 	public String[] getPerifericos() {
 		return perifericos;
+	}
+	public void setPerifericos(String[] perifericos) {
+		this.perifericos = perifericos;
 	}
 	public void setPeriferico(String periferico) {
 		this.perifericos[position] = periferico;

@@ -14,6 +14,7 @@ class helperTest2 {
 		computer c1 = new computer("gpu1", "cpu1", "ID0001", "Modelo XXZ", 16, 512);
 		computer c2 = new computer("gpu1", "cpu2", "ID0001", "Modelo XXZ", 16, 512);
 		helper.cpuChanger(c1, c2);
+		assertEquals("cpu2",c1.getCpu());
 	}
 
 }

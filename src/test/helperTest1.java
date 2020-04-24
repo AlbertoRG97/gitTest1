@@ -14,6 +14,7 @@ class helperTest1 {
 		computer c1 = new computer("gpu1", "cpu1", "ID0001", "Modelo XXZ", 16, 512);
 		c1.setPeriferico("Mouse");
 		helper.verPerifericos(c1);
+		assertEquals("Mouse",c1.getPeriferico("Mouse"));
 	}
 
 }

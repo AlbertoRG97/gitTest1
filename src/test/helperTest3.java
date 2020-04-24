@@ -13,7 +13,8 @@ class helperTest3 {
 	void testGpuChanger() {
 		computer c1 = new computer("gpu1", "cpu1", "ID0001", "Modelo XXZ", 16, 512);
 		computer c2 = new computer("gpu12", "cpu2", "ID0001", "Modelo XXZ", 16, 512);
-		helper.cpuChanger(c1, c2);
+		helper.gpuChanger(c1, c2);
+		assertEquals("gpu12",c1.getGpu());
 	}
 
 }
