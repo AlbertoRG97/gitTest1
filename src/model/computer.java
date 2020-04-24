@@ -5,6 +5,7 @@ public class computer {
 	private String gpu, cpu, id, model;
 	private int ram, rom, position = 0;
 	private String[] perifericos = new String[5];
+	private String date;
 	
 	public String getGpu() {
 		return gpu;
