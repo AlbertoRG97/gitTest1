@@ -18,4 +18,11 @@ public class helper {
 			System.out.println(p[i]);
 		}
 	}
+	
+	public static void cpuChanger(computer c1, computer c2) {
+		String com1 = c1.getCpu();
+		String com2 = c2.getCpu();
+		c1.setCpu(com2);
+		c2.setCpu(com1);
+	}
 }
