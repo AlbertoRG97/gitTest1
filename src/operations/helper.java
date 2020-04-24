@@ -25,4 +25,11 @@ public class helper {
 		c1.setCpu(com2);
 		c2.setCpu(com1);
 	}
+	
+	public static void gpuChanger(computer c1, computer c2) {
+		String com1 = c1.getGpu();
+		String com2 = c2.getGpu();
+		c1.setGpu(com2);
+		c2.setGpu(com1);
+	}
 }
